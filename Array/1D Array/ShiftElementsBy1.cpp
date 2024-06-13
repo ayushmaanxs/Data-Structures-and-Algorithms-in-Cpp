@@ -1,23 +1,21 @@
 //Shift elements of array by 1 step
+
 #include <iostream>
 using namespace std;
 // right ki disha me shift by 1 step
 void shiftArray(int arr[], int size)
 {   
     // step 1 - store 1st element of array in temp
-    int temp[2];
-    temp[0] = arr[size-2];
-    temp[1]=arr[size-1];
+    int temp = arr[size - 1];
 
     // step 2 - 
-    // shift -> arr[i] = arr[i-2]
-    for (int i = size - 1; i > 1; i--)
+    // shift -> arr[i] = arr[i-1]
+    for (int i = size - 1; i > 0; i--)
     {
-        arr[i] = arr[i - 2];
+        arr[i] = arr[i - 1];
     }
     // step 3 - copy temp into 0th index
-    arr[0] = temp[0];
-    arr[1] = temp[1];
+    arr[0] = temp;
     for (int i = 0; i < size; i++)
     {
         cout << arr[i] << " ";
