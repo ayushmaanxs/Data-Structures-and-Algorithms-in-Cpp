@@ -24,7 +24,7 @@ public:
     {
         this->age = age;
     }
-} 
+} ;
 int main()
 {
     cout << "Hello" << endl;
