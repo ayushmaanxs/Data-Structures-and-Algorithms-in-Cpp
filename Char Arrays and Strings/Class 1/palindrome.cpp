@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
-void checkPalindrome(char ch[],int n){
+bool checkPalindrome(char ch[],int n){
     int i = 0;
     int j = n-1;
     while(i<j){

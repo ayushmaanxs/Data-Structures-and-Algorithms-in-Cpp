@@ -156,7 +156,7 @@ int main()
     // destructor memeory free krta hai
     // Destrucotr have to be called manually in the objects created with dynamic memeory allocation
     cout << " z object creation " << endl;
-    Animal* z = new Animal();
+    Animal *z = new Animal();
     z->age = 25;
     // manually deleting / calling destuctor for objects created using dynmaic memory allocation i.e., using new keyword
     delete z;
